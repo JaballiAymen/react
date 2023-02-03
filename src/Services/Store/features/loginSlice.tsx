@@ -16,7 +16,7 @@ const loginSlice = createSlice({
     name: "login",
     initialState,
     reducers: {
-        login: (state, action: PayloadAction<{}>) => {
+        login: (state, action: PayloadAction<LoginState> ) => {
             state.isLoggedIn = true;
             state.user = action.payload;
         }
@@ -25,13 +25,13 @@ const loginSlice = createSlice({
 
 export const { login } = loginSlice.actions;
 
-export const selectLogin = (state: RootState) => state.login;
+export const selectLogin = (state: RootState) => state.auth;
 
 export const selectIsLoggedIn = createSelector(
-
     selectLogin,
     (login: any) => login.isLoggedIn
 );
+
 
 export const selectUser = createSelector(
     selectLogin,

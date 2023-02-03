@@ -1,14 +1,41 @@
-// header 
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useNavigate } from "react-router-dom";
 
-import React from 'react';
-
-
-const Header: React.FC = () => {
-    return (
-        <header>
-            <h1>Header</h1>
-        </header>
-    );
+export default function Header() {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/login");
+  };
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Box onClick={() => navigate("/")}>
+                Loomeno
+            </Box>
+          </Typography>
+          {/* Button login redirect to login */}
+          <Button color="inherit" onClick={handleLogin}>
+            Login
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
-
-export default Header;

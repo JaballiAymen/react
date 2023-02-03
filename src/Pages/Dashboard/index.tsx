@@ -1,16 +1,14 @@
-// dashboard page import header and footer
-
 import React from "react";
-import Header from "../../Layouts/Header";
-import Footer from "../../Layouts/Footer";
-import Main from "../../Layouts/Main";
+import PersonList from "../../Services/Api";
 
 const Dashboard: React.FC = () => {
+
+  
+
   return (
     <div id="page-dashboard">
-      <Header />
-      <Main />
-      <Footer />
+      <h1> Dashboard </h1>
+      <PersonList />
     </div>
   );
 };

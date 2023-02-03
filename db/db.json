@@ -1,0 +1,56 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "John@mail.com"
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "email": "Jane@mail.com"
+        },
+        {
+            "id": 3,
+            "name": "Bob Smith",
+            "email": "Bob@mail.com"
+        },
+        {
+            "id": 4,
+            "name": "Emily Johnson",
+            "email": "Emily@mail.com"
+        },
+        {
+            "id": 5,
+            "name": "Michael Brown",
+            "email": "Michael@mail.com"
+        },
+        {
+            "id": 6,
+            "name": "Sarah Davis",
+            "email": "Sarah@mail.com"
+        },
+        {
+            "id": 7,
+            "name": "David Wilson",
+            "email": "David@mail.com"
+        },
+        {
+            "id": 8,
+            "name": "Emily Clark",
+            "email": "EmilyC@mail.com"
+        },
+        {
+            "id": 9,
+            "name": "William Lee",
+            "email": "William@mail.com"
+        },
+        {
+            "id": 10,
+            "name": "Elizabeth Smith",
+            "email": "Elizabeth@mail.com"
+        }
+    ]
+
+
+  }
